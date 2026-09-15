@@ -23,3 +23,8 @@ function createHeart() {
 }
 
 setInterval(createHeart, 700);
+
+const musik = document.getElementById("bgMusic");
+document.body.addEventListener("click", () => {
+    musik.play();
+}, { once: true });
